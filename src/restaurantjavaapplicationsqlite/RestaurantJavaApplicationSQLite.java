@@ -14,6 +14,7 @@ public class RestaurantJavaApplicationSQLite {
     /**
      * @param args the command line arguments
      */
+    // Comment!
     public static void main(String[] args) {
         // TODO code application logic here
     }
