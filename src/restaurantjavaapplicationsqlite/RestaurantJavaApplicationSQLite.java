@@ -4,19 +4,29 @@
  * and open the template in the editor.
  */
 package restaurantjavaapplicationsqlite;
+       
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  *
  * @author Tylor
  */
 public class RestaurantJavaApplicationSQLite {
-
+    
     /**
      * @param args the command line arguments
      */
     // Comment!
     public static void main(String[] args) {
-        // TODO code application logic here
+        // main application logic
+        LoginFrame lf = new LoginFrame();
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        lf.setSize(screenSize);
+        
+        
     }
     
 }
