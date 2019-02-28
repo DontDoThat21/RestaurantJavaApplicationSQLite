@@ -11,7 +11,7 @@ import javax.swing.JButton;
 
 /**
  *
- * @author Scott
+ * @author Tylor
  */
 public class LoginFrame extends javax.swing.JFrame {
 
