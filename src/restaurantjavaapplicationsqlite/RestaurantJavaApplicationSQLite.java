@@ -19,7 +19,6 @@ public class RestaurantJavaApplicationSQLite {
     /**
      * @param args the command line arguments
      */
-    // Comment!
     public static void main(String[] args) {
         // main application logic
         LoginFrame lf = new LoginFrame();
