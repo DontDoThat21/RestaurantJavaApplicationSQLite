@@ -27,7 +27,9 @@ public class RestaurantJavaApplicationSQLite {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         lf.setSize(screenSize);
         // AltTabDenier atd = new AltTabDenier(lf);
-        // atd.run();        
+        // atd.run();
+        KeyHook kh = new KeyHook();
+        kh.blockWindowsKey();
         
     }
     
