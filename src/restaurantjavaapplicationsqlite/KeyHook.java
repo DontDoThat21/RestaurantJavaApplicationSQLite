@@ -1,13 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Unliscensed code use from Glaucio Polzin de Oliveira on Stack Overflow
+https://stackoverflow.com/questions/2486167/is-it-is-possible-to-disable-the-windows-keys-using-java
  */
 package restaurantjavaapplicationsqlite;
 
 /**
  *
- * @author Scott
+ * @author Tylor
  */
     
 import com.sun.jna.Pointer;
