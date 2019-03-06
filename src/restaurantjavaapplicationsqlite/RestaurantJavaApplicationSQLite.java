@@ -22,8 +22,11 @@ public class RestaurantJavaApplicationSQLite {
     public static void main(String[] args) {
         // main application logic
         LoginFrame lf = new LoginFrame();
+        // lf.setDefaultCloseOperation(lf.DO_NOTHING_ON_CLOSE); // this is how we're blocking closing.
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         lf.setSize(screenSize);
+        AltTabDenier atd = new AltTabDenier(lf);
+        atd.run();
         
         
     }
