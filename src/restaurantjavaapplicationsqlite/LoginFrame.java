@@ -7,7 +7,10 @@ package restaurantjavaapplicationsqlite;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -46,9 +49,24 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel2.setText("Login");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                keyPressedListener(evt);
+            }
+        });
+
         jLabel1.setFont(new java.awt.Font("Vrinda", 0, 24)); // NOI18N
         jLabel1.setText("Password");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jPasswordField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                keyPressedListener(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                keyReleasedListener(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -102,6 +120,18 @@ public class LoginFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void keyPressedListener(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyPressedListener
+        AltTabDenier denier = new AltTabDenier(this);
+        denier.run();
+        try { Thread.sleep(200); } 
+        catch (InterruptedException ex) {};
+        denier.stop();        
+    }//GEN-LAST:event_keyPressedListener
+
+    private void keyReleasedListener(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyReleasedListener
+        // TODO add your handling code here:
+    }//GEN-LAST:event_keyReleasedListener
 
     /**
      * @param args the command line arguments

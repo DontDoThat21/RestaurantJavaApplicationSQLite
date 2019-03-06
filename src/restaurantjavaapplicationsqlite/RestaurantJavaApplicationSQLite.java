@@ -9,6 +9,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -25,9 +26,8 @@ public class RestaurantJavaApplicationSQLite {
         // lf.setDefaultCloseOperation(lf.DO_NOTHING_ON_CLOSE); // this is how we're blocking closing.
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         lf.setSize(screenSize);
-        AltTabDenier atd = new AltTabDenier(lf);
-        atd.run();
-        
+        // AltTabDenier atd = new AltTabDenier(lf);
+        // atd.run();        
         
     }
     

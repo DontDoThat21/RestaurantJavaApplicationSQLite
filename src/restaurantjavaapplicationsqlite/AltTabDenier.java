@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Unliscensed code partially used from user Martijn Courteaux from stackoverflow
+https://stackoverflow.com/questions/6127709/remove-the-possibility-of-using-alt-f4-and-alt-tab-in-java-gui
  */
 package restaurantjavaapplicationsqlite;
 
@@ -44,6 +43,7 @@ public class AltTabDenier implements Runnable
              {
                   robot.keyRelease(KeyEvent.VK_ALT);
                   robot.keyRelease(KeyEvent.VK_TAB);
+                  robot.keyRelease(KeyEvent.VK_WINDOWS);
                   frame.requestFocus();
                   try { Thread.sleep(10); } catch(Exception e) {}
              }
